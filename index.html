@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
       /* General reset for better cross-client rendering */
       body,
@@ -147,6 +149,21 @@
       }
       .description-box :last-child {
         padding-left: 8px;
+      }
+      .description-box .contact-us{
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+          border-right: none;
+        }
+      }
+      .description-box-content{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        justify-content: space-between;
       }
       .service-container {
         flex-direction: column;
@@ -313,11 +330,16 @@
             We deliver professionalism, reliability, and technical expertise.
             Contact us to discuss your needs.
           </div>
+          <div class="description">
+          We look forward to the opportunity to assist you in maintaining the
+          integrity and performance of your pool facilities.
+          </div>
           <div class="description">Team calif</div>
+
         </div>
         <div class="content service-container">
           <div class="service-box annual-maintenance">
-            <img src="./assets/icons/maintenance.svg" alt="maintenance" />
+            <img src="https://www.calif.ae/wp-content/uploads/2024/06/6.png" alt="maintenance" />
             <div class="box-text">
               <h3>Annual Maintenance Contracts</h3>
               Hassle-free, scheduled maintenance.
@@ -386,9 +408,20 @@
           We pride ourselves on delivering professionalism, reliability, and
           technical expertise in every aspect of our service.
         </div>
+        
         <div class="description-box-content">
-          We look forward to the opportunity to assist you in maintaining the
-          integrity and performance of your pool facilities.
+          <div class="contact-us">
+          <span class="material-symbols-outlined">
+            call
+            </span>0567479659</div>
+            <div class="contact-us">
+              <span class="material-symbols-outlined">
+                mail
+                </span>info@calif.ae
+            </div>
+          <!-- We look forward to the opportunity to assist you in maintaining the
+          integrity and performance of your pool facilities. -->
+
         </div>
       </div>
 
