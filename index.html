@@ -100,6 +100,9 @@
       .content-container :first-child {
         margin-right: 10px;
       }
+      .content-container :first-child :first-child {
+        margin-right: 0;
+      }
       .service-container :first-child {
         margin-right: 0;
       }
@@ -131,7 +134,7 @@
       }
       .description {
         font-size: 16px;
-        margin-top: 32px;
+        margin-top: 12px;
         text-align: justify;
       }
       .description-box {
@@ -156,6 +159,12 @@
         justify-content: center;
         align-items: center;
         span{
+          margin-right: 12px;
+          border-right: none;
+        }
+        a{
+          text-decoration: none;
+          color: #ffffff;
           border-right: none;
         }
       }
@@ -206,8 +215,8 @@
         text-align: center;
         padding: 20px;
         font-size: 12px;
-        color: #ffffff;
-        background-color: #080808;
+        color: #080808;
+        background-color: #ffffff;
       }
       .footer p {
         margin: 5px 0;
@@ -251,12 +260,6 @@
         }
         .content-container .content :first-child {
           margin-right: 0;
-        }
-        .title-box {
-          padding: 32px;
-          img {
-            padding-right: 12px;
-          }
         }
         .description {
           margin: 12px 32px;
@@ -307,19 +310,18 @@
       <!-- Main Content Section -->
       <div class="content-container">
         <div class="content">
-          <div class="title-box">
+          <div class="service-box">
             <img
               src="https://www.calif.ae/wp-content/uploads/2024/06/1.png"
-              alt="pool"
+              alt="tile"
             />
-            <span
-              >Professional
-              <span class="highlight-text">Swimming Pool Maintenance</span>
-              Services</span
-            >
+            <div class="box-text">
+              <h3>Customized Pool Design and Developement</h3>
+              Crafting exceptional aquatic spaces tailored to your vision and
+              needs
+            </div>
           </div>
-
-          <div class="description">Dear Valued Partner,</div>
+          <div class="description first-mail-text">Dear Valued Partner,</div>
           <div class="description">
             We are specialized in swimming pool design, construction, and
             maintenance, ensuring your pool stays pristine for years. Trust us
@@ -410,10 +412,13 @@
         </div>
         
         <div class="description-box-content">
+
           <div class="contact-us">
+            <a href="https://wa.me/+971509469626">
           <span class="material-symbols-outlined">
             call
             </span>0567479659</div>
+          </a>
             <div class="contact-us">
               <span class="material-symbols-outlined">
                 mail
